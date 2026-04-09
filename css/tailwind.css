@@ -1,0 +1,55 @@
+ .material-symbols-outlined {
+     font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+ }
+
+ body {
+     font-family: 'Inter', sans-serif;
+ }
+
+ h1,
+ h2,
+ h3,
+ .serif {
+     font-family: 'Newsreader', serif;
+ }
+
+ header {
+     padding-top: 10px;
+     /* Reduce from 20px or 40px */
+     padding-bottom: 10px;
+     min-height: auto;
+     /* Prevents a forced large height */
+ }
+
+ .logo-image {
+     max-height: 50px;
+     /* Adjust this value until it looks right */
+     width: auto;
+ }
+
+ nav a {
+     font-size: 14px;
+     margin: 0 15px;
+     /* Adjusts horizontal gap between links */
+ }
+
+ @keyframes fadeSlideshow {
+
+     0%,
+     20% {
+         opacity: 1;
+     }
+
+     /* Visible */
+     25%,
+     100% {
+         opacity: 0;
+     }
+
+     /* Hidden */
+ }
+
+ .animate-fade-slideshow {
+     opacity: 0;
+     animation: fadeSlideshow 20s infinite;
+ }
