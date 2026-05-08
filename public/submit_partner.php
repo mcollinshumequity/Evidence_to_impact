@@ -5,7 +5,7 @@
  */
 
 // Basic configuration
-$to_email = "hello@evidencetoimpact.com";
+$to_email = "mcollinswork6@gmail.com";
 $subject_prefix = "New Contact Request: ";
 
 // Security: Prevent direct access via GET
