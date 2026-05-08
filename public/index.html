@@ -30,15 +30,13 @@
         </div>
         <div class="hidden md:flex gap-10 items-center">
             <a class="text-stone-600 dark:text-stone-400 hover:text-emerald-800 transition-colors font-serif italic font-medium tracking-tight"
-                href="index.html">Services</a>
+                href="index.html">Homepage</a>
+            <a class="text-stone-600 dark:text-stone-400 hover:text-emerald-800 transition-colors font-serif italic font-medium tracking-tight"
+                href="services.html">Services</a>
             <a class="text-stone-600 dark:text-stone-400 hover:text-emerald-800 transition-colors font-serif italic font-medium tracking-tight"
                 href="about.html">About</a>
-            <a class="text-stone-600 dark:text-stone-400 hover:text-emerald-800 transition-colors font-serif italic font-medium tracking-tight"
-                href="#">Evidence</a>
-            <a class="text-stone-600 dark:text-stone-400 hover:text-emerald-800 transition-colors font-serif italic font-medium tracking-tight"
-                href="#">Impact</a>
-            <a class="text-stone-600 dark:text-stone-400 hover:text-emerald-800 transition-colors font-serif italic font-medium tracking-tight"
-                href="#">Contact</a>
+
+
         </div>
         <button onclick="document.getElementById('partnerModal').classList.remove('hidden')"
             class="bg-gradient-to-br from-primary to-primary-container text-on-primary px-8 py-3 rounded-full font-medium transition-all hover:scale-105 active:scale-95 shadow-lg shadow-primary/20">
@@ -58,8 +56,9 @@
                         communities.
                     </h1>
                     <p class="text-xl md:text-2xl text-on-surface-variant font-body leading-relaxed max-w-2xl mb-12">
-                        We transform complex data into compassionate strategies. Our mission is to bridge the gap
-                        between rigorous research and human-centered community outcomes.
+                        Maternal‑health consulting and program development services, including doula program design,
+                        curriculum creation, and evidence‑based parent education for nonprofits and healthcare
+                        organizations.
                     </p>
                     <div class="flex flex-wrap gap-6">
                         <button
@@ -75,20 +74,8 @@
                 </div>
                 <div class="lg:col-span-5 relative">
                     <div class="aspect-[4/5] rounded-[3rem] overflow-hidden shadow-2xl relative bg-stone-100">
-                        <img class="absolute inset-0 w-full h-full object-cover animate-fade-slideshow"
-                            style="animation-delay: 0s;" src="css/homepage1.jpg" alt="Description 1" />
-
-                        <img class="absolute inset-0 w-full h-full object-cover animate-fade-slideshow"
-                            style="animation-delay: 4s;" src="css/homepage2.jpg" alt="Description 2" />
-
-                        <img class="absolute inset-0 w-full h-full object-cover animate-fade-slideshow"
-                            style="animation-delay: 8s;" src="css/homepage3.jpg" alt="Description 3" />
-
-                        <img class="absolute inset-0 w-full h-full object-cover animate-fade-slideshow"
-                            style="animation-delay: 12s;" src="css/homepage4.jpg" alt="Description 4" />
-
-                        <img class="absolute inset-0 w-full h-full object-cover animate-fade-slideshow"
-                            style="animation-delay: 16s;" src="css/homepage5.jpg" alt="Description 5" />
+                        <img class="absolute inset-0 w-full h-full object-cover" src="css/BossLady.jpg"
+                            alt="Description 1" />
                     </div>
                 </div>
                 <div
@@ -107,9 +94,9 @@
                         <h2 class="text-4xl md:text-5xl font-headline italic text-primary mb-8 leading-tight">Our
                             Mission &amp; Compass</h2>
                         <p class="text-lg text-on-surface-variant leading-relaxed">
-                            At Evidence to Impact Consulting, we believe that data shouldn't be cold. It should be a
-                            narrative of lived experiences. We provide the editorial precision and strategic depth
-                            needed to solve the most pressing challenges facing modern families.
+                            To transform maternal and infant health outcomes by helping organizations build
+                            evidence‑based, trauma‑informed programs that honor dignity, strengthen families, and
+                            create lasting community impact.
                         </p>
                     </div>
                     <div class="flex gap-16 border-l border-outline-variant/30 pl-16">
@@ -162,7 +149,7 @@
                 <div class="flex flex-col md:flex-row justify-between items-baseline mb-20 gap-8">
                     <h2 class="text-5xl font-headline text-on-surface max-w-xl">Evidence in Action: Our Signature
                         Categories</h2>
-                    <a class="text-secondary font-semibold flex items-center gap-2 group" href="#">
+                    <a class="text-secondary font-semibold flex items-center gap-2 group" href="services.html">
                         View All Services
                         <span
                             class="material-symbols-outlined group-hover:translate-x-1 transition-transform">east</span>
@@ -304,6 +291,11 @@
                 </button>
             </form>
         </div>
+    </div>
+
+    <!-- Status Message Notification -->
+    <div id="statusMessage"
+        class="fixed top-24 left-1/2 -translate-x-1/2 z-[110] hidden px-8 py-4 rounded-full text-white font-medium shadow-2xl transition-all duration-500">
     </div>
 
     <script>
