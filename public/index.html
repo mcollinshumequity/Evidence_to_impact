@@ -82,15 +82,15 @@
                         organizations.
                     </p>
                     <div class="flex flex-wrap gap-6">
-                        <button
-                            class="bg-gradient-to-br from-primary to-primary-container text-on-primary px-10 py-5 rounded-full text-lg font-medium shadow-xl shadow-primary/20 hover:scale-105 transition-transform">
+                        <a href="services.html"
+                            class="inline-block bg-gradient-to-br from-primary to-primary-container text-on-primary px-10 py-5 rounded-full text-lg font-medium shadow-xl shadow-primary/20 hover:scale-105 transition-transform">
                             Explore Our Impact
-                        </button>
-                        <button class="flex items-center gap-3 text-secondary font-semibold group px-6 py-5">
+                        </a>
+                        <a href="services.html" class="flex items-center gap-3 text-secondary font-semibold group px-6 py-5">
                             Learn Our Methodology
                             <span
                                 class="material-symbols-outlined group-hover:translate-x-1 transition-transform">arrow_forward</span>
-                        </button>
+                        </a>
                     </div>
                 </div>
                 <div class="lg:col-span-5 relative">
@@ -108,63 +108,7 @@
             </div>
             </div>
         </section>
-        <section class="bg-surface-container-low py-32 rounded-[4rem]">
-            <div class="max-w-7xl mx-auto px-12">
-                <div class="grid lg:grid-cols-2 gap-24 items-end mb-24">
-                    <div>
-                        <h2 class="text-4xl md:text-5xl font-headline italic text-primary mb-8 leading-tight">Our
-                            Mission &amp; Compass</h2>
-                        <p class="text-lg text-on-surface-variant leading-relaxed">
-                            To transform maternal and infant health outcomes by helping organizations build
-                            evidence‑based, trauma‑informed programs that honor dignity, strengthen families, and
-                            create lasting community impact.
-                        </p>
-                    </div>
-                    <div class="flex gap-16 border-l border-outline-variant/30 pl-16">
-                        <div>
-                            <div class="text-5xl font-headline text-secondary mb-2">92%</div>
-                            <p class="text-sm font-label uppercase tracking-widest text-on-surface-variant">Outcome
-                                Improvement</p>
-                        </div>
-                        <div>
-                            <div class="text-5xl font-headline text-secondary mb-2">150+</div>
-                            <p class="text-sm font-label uppercase tracking-widest text-on-surface-variant">Communities
-                                Served</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
-                    <div
-                        class="bg-surface-container-lowest p-10 rounded-[2.5rem] shadow-sm hover:shadow-xl transition-shadow duration-500 border-l-4 border-secondary">
-                        <div class="w-16 h-16 bg-primary-fixed rounded-2xl flex items-center justify-center mb-8">
-                            <span class="material-symbols-outlined text-primary text-3xl">analytics</span>
-                        </div>
-                        <h3 class="text-2xl font-headline font-semibold mb-4">Strategic Evaluation</h3>
-                        <p class="text-on-surface-variant leading-relaxed">Rigorous assessment of program efficacy using
-                            dignity-centered methodologies that honor participant voice.</p>
-                    </div>
-                    <div
-                        class="bg-surface-container-lowest p-10 rounded-[2.5rem] shadow-sm hover:shadow-xl transition-shadow duration-500 border-l-4 border-primary">
-                        <div
-                            class="w-16 h-16 bg-surface-container-high rounded-2xl flex items-center justify-center mb-8">
-                            <span class="material-symbols-outlined text-secondary text-3xl">diversity_3</span>
-                        </div>
-                        <h3 class="text-2xl font-headline font-semibold mb-4">Community Insights</h3>
-                        <p class="text-on-surface-variant leading-relaxed">Deep-dive qualitative research that captures
-                            the nuances of community needs and cultural assets.</p>
-                    </div>
-                    <div
-                        class="bg-surface-container-lowest p-10 rounded-[2.5rem] shadow-sm hover:shadow-xl transition-shadow duration-500 border-l-4 border-secondary-container">
-                        <div class="w-16 h-16 bg-primary-fixed rounded-2xl flex items-center justify-center mb-8">
-                            <span class="material-symbols-outlined text-primary text-3xl">auto_graph</span>
-                        </div>
-                        <h3 class="text-2xl font-headline font-semibold mb-4">Impact Strategy</h3>
-                        <p class="text-on-surface-variant leading-relaxed">Transforming evidence into actionable
-                            roadmaps that scale social impact and drive policy change.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
+
         <section class="py-32 px-12">
             <div class="max-w-7xl mx-auto">
                 <div class="flex flex-col md:flex-row justify-between items-baseline mb-20 gap-8">
@@ -219,10 +163,10 @@
                 <p class="text-xl text-on-surface-variant max-w-2xl mx-auto mb-12">We partner with NGOs, government
                     agencies, and philanthropic leaders to create lasting change.</p>
                 <div class="flex flex-col sm:flex-row justify-center gap-6">
-                    <button
+                    <button onclick="document.getElementById('partnerModal').classList.remove('hidden')"
                         class="bg-primary text-on-primary px-12 py-5 rounded-full text-lg font-medium hover:bg-primary-container transition-colors">Start
                         a Project</button>
-                    <button
+                    <button onclick="document.getElementById('partnerModal').classList.remove('hidden')"
                         class="bg-surface-container-low text-on-surface px-12 py-5 rounded-full text-lg font-medium hover:bg-surface-container-high transition-colors">Request
                         a Brief</button>
                 </div>
@@ -283,7 +227,7 @@
                 <span class="material-symbols-outlined text-3xl">close</span>
             </button>
             <h2 class="text-3xl font-headline italic text-primary mb-6">Partner With Us</h2>
-            <form action="submit_partner.php" method="POST" class="space-y-4">
+            <form action="https://formspree.io/f/mnjrlwyl" method="POST" class="space-y-4">
                 <div>
                     <label for="name" class="block text-sm font-medium text-on-surface-variant mb-1">Name</label>
                     <input type="text" id="name" name="name" required
