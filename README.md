@@ -2,7 +2,7 @@
 
 Evidence to Impact is a modern, responsive, premium website designed for maternal‑health consulting and program development services. It features a dignity‑first, high‑end aesthetic with rich color palettes, smooth animations, and clean, semantic layouts.
 
-## 🚀 Tech Stack & Structure
+## Tech Stack & Structure
 
 * **Frontend**: HTML5, Vanilla JavaScript, Tailwind CSS (via CDN with customized plugins)
 * **Icons & Fonts**: Google Fonts (Newsreader & Inter), Google Material Symbols
