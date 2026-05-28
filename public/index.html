@@ -228,6 +228,7 @@
             </button>
             <h2 class="text-3xl font-headline italic text-primary mb-6">Partner With Us</h2>
             <form action="https://formspree.io/f/mnjrlwyl" method="POST" class="space-y-4">
+                <input type="hidden" name="_next" value="https://evidencetoimpact-92322.web.app/index.html?status=success">
                 <div>
                     <label for="name" class="block text-sm font-medium text-on-surface-variant mb-1">Name</label>
                     <input type="text" id="name" name="name" required
@@ -265,6 +266,9 @@
 
     <script>
         document.addEventListener('DOMContentLoaded', () => {
+            // Clear all forms on load to prevent cached values
+            document.querySelectorAll('form').forEach(form => form.reset());
+
             const urlParams = new URLSearchParams(window.location.search);
             const status = urlParams.get('status');
             const statusMessage = document.getElementById('statusMessage');
